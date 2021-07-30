@@ -30,3 +30,5 @@ What this will install?
 
 - openrepo / storeman
 - mopidy + mopidy-iris (with spotify support)
+- Fernschreiber
+- sailotp

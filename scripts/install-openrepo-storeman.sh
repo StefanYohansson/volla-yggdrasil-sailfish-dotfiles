@@ -3,6 +3,8 @@
 STOREMAN_VERSION=${STOREMAN_VERSION:="0.2.8-2"}
 SDK_VERSION=${SDK_VERSION:="4.1.0.24"}
 
+rpm --import https://sailfish.openrepos.net/openrepos.key
+
 FILENAME="harbour-storeman-${STOREMAN_VERSION}.sdk${SDK_VERSION}.armv7hl.rpm"
 DOWNLOAD_URL="https://github.com/mentaljam/harbour-storeman/releases/download/v${STOREMAN_VERSION}/$FILENAME"
 
