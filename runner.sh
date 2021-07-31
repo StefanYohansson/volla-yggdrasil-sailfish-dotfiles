@@ -12,3 +12,7 @@ rsync -a --ignore-existing ./data/mopidy.service $PHONE_SSH_URI:/etc/systemd/use
 rsync -a --ignore-existing ./data/mopidy.conf $PHONE_DEFAULT_SSH_URI:/home/defaultuser/.config/mopidy/
 ssh $PHONE_SSH_URI < ./scripts/prepare-mopidy-spotify.sh
 ssh $PHONE_DEFAULT_SSH_URI < ./scripts/mopidy-spotify.sh
+rsync -a ./data/mopidy-index.html $PHONE_DEFAULT_SSH_URI:/home/defaultuser/.local/lib/python3.8/site-packages/mopidy_iris/static/index.html
+rsync -a ./data/mopidy-app.js $PHONE_DEFAULT_SSH_URI:/home/defaultuser/.local/lib/python3.8/site-packages/mopidy_iris/static/app.js
+rsync -a ./data/mopidy-app.js $PHONE_DEFAULT_SSH_URI:/home/defaultuser/.local/lib/python3.8/site-packages/mopidy_iris/static/app.min.js
+rsync -a ./data/mopidy-intersection-observer.js $PHONE_DEFAULT_SSH_URI:/home/defaultuser/.local/lib/python3.8/site-packages/mopidy_iris/static/intersection-observer.js
