@@ -32,3 +32,5 @@ What this will install?
 - mopidy + mopidy-iris (with spotify support)
 - Fernschreiber
 - sailotp
+
+![some apps](https://raw.githubusercontent.com/StefanYohansson/volla-yggdrasil-sailfish-dotfiles/main/data/mopidy-telegram-apps.png)
